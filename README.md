@@ -8,7 +8,7 @@ to reengage it, but as several threads might
 be trying the same, it may or may not succeed.
 So it checks if it succeeded (with the same
 atomic operation), and if so it done. If not
-it backsoff for a random interval which is
+it backs off for a random interval which is
 doubled every retry (hence exponential), and
 retries it all over again.
 
@@ -41,7 +41,7 @@ context of multiprocessor mutual exclusion by
    CS. Its a race between threads. So this
    thread checks to see it was the one who was
    successful, and if so its done.
-3. If not, then it backsoff (sleeps) for a
+3. If not, then it backs off (sleeps) for a
    random interval, and then retries again.
    Each retry the range of backoff interval
    is increased so reduce high-contention.
