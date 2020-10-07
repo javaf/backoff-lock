@@ -1,5 +1,3 @@
-import java.util.concurrent.*;
-import java.util.concurrent.locks.*;
 import java.util.concurrent.atomic.*;
 
 // Exponential Backoff Lock uses an atomic value for
@@ -28,7 +26,7 @@ import java.util.concurrent.atomic.*;
 // it is suitable for medium-contention
 // memory-limited architectures.
 
-class BackoffLock implements Lock {
+class BackoffLock extends AbstractLock {
   AtomicBoolean locked;
   static final long MIN_WAIT = 1;
   static final long MAX_WAIT = 100;
@@ -73,27 +71,5 @@ class BackoffLock implements Lock {
   @Override
   public void unlock() {
     locked.set(false); // 1
-  }
-
-  @Override
-  public void lockInterruptibly() throws InterruptedException {
-    lock();
-  }
-
-  @Override
-  public boolean tryLock() {
-    lock();
-    return true;
-  }
-
-  @Override
-  public boolean tryLock(long arg0, TimeUnit arg1) throws InterruptedException {
-    lock();
-    return true;
-  }
-
-  @Override
-  public Condition newCondition() {
-    return null;
   }
 }

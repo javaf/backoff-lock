@@ -33,6 +33,7 @@ context of multiprocessor mutual exclusion by
 [Mathews Cherian]: https://dl.acm.org/profile/81100089786
 
 ```java
+lock():
 1. When thread wants to access critical
    section, it checks to see if lock is already
    engaged, and if so, waits (spins).
@@ -48,6 +49,7 @@ context of multiprocessor mutual exclusion by
 ```
 
 ```java
+unlock():
 1. When a thread is done with its critical
    section, it simply sets the "locked" state
    to false.
