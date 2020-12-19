@@ -32,6 +32,11 @@ context of multiprocessor mutual exclusion by
 [Anant Agarwal]: https://scholar.google.com/citations?hl=en&user=E6XXUFcAAAAJ
 [Mathews Cherian]: https://dl.acm.org/profile/81100089786
 
+> **Course**: [Concurrent Data Structures], Monsoon 2020\
+> **Taught by**: Prof. Govindarajulu Regeti
+
+[Concurrent Data Structures]: https://github.com/iiithf/concurrent-data-structures
+
 ```java
 lock():
 1. When thread wants to access critical
