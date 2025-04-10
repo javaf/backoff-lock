@@ -73,3 +73,4 @@ See [BackoffLock.java] for code, [Main.java] for test, and [repl.it] for output.
 - [Adaptive backoff synchronization techniques :: Anant Agarwal, Mathews Cherian](https://ieeexplore.ieee.org/document/714578)
 
 ![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/javaf/backoff-lock)
+![](https://ga-beacon.deno.dev/G-G1E8HNDZYY:v51jklKGTLmC3LAZ4rJbIQ/github.com/moocf/backoff-lock.java)
